@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+</head>
+<body>
+    <h2>CUSAT Student Form</h2>
+    <form action="add.php" method="post">
+        <label for="regno">RegNo:</label>
+        <input type="number" name="regno" id="regno" required>
+        <br>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" maxlength="50" required>
+        <br>
+        <label for="course">Course:</label>
+        <input type="text" name="course" id="course">
+        <br>
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone" pattern="{1}[5-9][0-9]{9}" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="semester">Semester:</label> 
+        <input type="text" name="semester" id="semester">
+        <br>
+        <label for="description">Description:</label>
+        <textarea name="description" id="description" cols="21" rows="2"></textarea>
+        <br>
+        <label for="photo">Photo:</label>
+        <input type="file" name="photo" id="photo">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" minlength="8" required>
+        <br>
+        <input type="submit" value="Submit" id="submit" style="margin-top: 10px;">
+        <p>Already have an account <a href="login.html">Login</a></p>
+    </form>
+</body>
+</html>
