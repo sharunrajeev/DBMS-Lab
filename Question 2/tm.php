@@ -27,7 +27,9 @@
     // header("refresh: 20");
 
     $words = array();
-    $mysqli = new mysqli("localhost", "sharun", "sharun2001", "taskmanager");
+
+    // Change the username, password and database name
+    $mysqli = new mysqli("localhost", "username", "password", "database");
 
     // Check connection
     if ($mysqli->connect_errno) {
